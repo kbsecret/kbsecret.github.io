@@ -33,6 +33,9 @@ command will show up in `kbsecret help` and `kbsecret commands`
 arguments the user wants to be respected
 * `kbsecret foo` just looks nice!
 
+The [ext-cmds](https://github.com/kbsecret/ext-cmds) repository has some examples of custom
+commands.
+
 (Regardless of whether you name your custom command as above, you can still use the
 `KBSecret::CLI` class for convenience command writing in Ruby &mdash; see
 [the docs](http://www.rubydoc.info/gems/kbsecret/)).
