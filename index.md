@@ -31,6 +31,6 @@ text or blobs of data).
     sessions are directories containing those files.
 
     KBSecret's sessions and records can be manipulated with standard Unix tools (although
-    we recommend using the [`kbsecret` commands](man))
+    we recommend using the [`kbsecret` commands](man/))
 
 Interested? Check out [the installation](installation) and [quick start](quickstart) guides.
