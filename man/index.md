@@ -10,5 +10,4 @@ To build the `man`-compatible manpages for yourself, see the
 [README](https://github.com/kbsecret/kbsecret/blob/master/README.md). Otherwise, you
 can always refer to the HTML versions below:
 
-* [0.9.0.pre.3](0.9.0.pre.3/kbsecret.1)
-* [0.9.0.pre.2](0.9.0.pre.2/kbsecret.1)
+{% include_relative _manvers.md %}
