@@ -6,6 +6,26 @@ layout: default
 
 Once you have KBSecret [installed](installation), getting started is straightforward.
 
+## Terminology
+
+To get started, you'll need to know three terms as KBSecret uses them: *types*, *records*,
+and *sessions*.
+
+A *type* in KBSecret is a collection of fields and operations on those fields. For example,
+the `login` type might have two fields (a `username` and `password`), and operations to update
+those fields as necessary.
+
+A *record* in KBSecret is an instantiation of a *type*, meaning that its fields are bound to
+real values. For example, if `gmail` were a record of type `login`, its `username` might be
+bound to `alice` and its `password` might be bound to `hunter2`.
+
+A *session* in KBSecret is a collection of *records*. The session can be heterogeneous,
+meaning that multiple types of records can be present in it. Every session is associated
+with one or more Keybase users, the first of whom is always you.
+
+There are other concepts in KBSecret that you'll discover later (like generators), but these
+three are the only ones absolutely required to get started.
+
 ## Types
 
 First, let's see what kinds of records we can create:
