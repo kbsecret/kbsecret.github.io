@@ -43,4 +43,6 @@ $ kbsecret version
 
 If you see something like `kbsecret version 0.8.2.`, you're good to go!
 
-Now, check out the [quick start](quickstart) guide...
+Everything working? Check out the [quick start](quickstart) guide.
+
+Something broken? [Tell us about it](github.com/kbsecret/kbsecret/issues).
