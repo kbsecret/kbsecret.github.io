@@ -20,8 +20,9 @@ real values. For example, if `gmail` were a record of type `login`, its `usernam
 bound to `alice` and its `password` might be bound to `hunter2`.
 
 A **session** in KBSecret is a collection of **records**. The session can be heterogeneous,
-meaning that multiple types of records can be present in it. Every session is associated
-with one or more Keybase users, the first of whom is always you.
+meaning that multiple types of records can be present in it. Every session is *either* associated
+with one or more Keybase users (including you), *or* with a
+[Keybase team](https://keybase.io/blog/introducing-keybase-teams).
 
 There are other concepts in KBSecret that you'll discover later (like generators), but these
 three are the only ones absolutely required to get started.
@@ -101,11 +102,7 @@ For example, this will create a session between two Keybase users ("alice" and
 
 ```bash
 $ kbsecret new-session --label ultra-secret --root ultra-secret --users alice,bob
-```
-
-Or, more briefly:
-
-```bash
+$ # more briefly
 $ kbsecret new-session -l ultra-secret -r ultra-secret -u alice,bob
 ```
 
@@ -114,12 +111,22 @@ the label is what identifies the session to other `kbsecret` commands, while the
 is just the directory that the session's storage directory. In this case, it gets expanded
 to `/keybase/private/alice,bob/kbsecret/ultra-secret/`.
 
+We can also create a *team-based* session via the `--team` option, which takes the name
+of a Keybase team that you already belong to:
+
+```bash
+$ kbsecret new-session --team megacorp.devs --label api-keys
+```
+
+Team-based sessions infer the session storage directory from `--label`, so we don't need
+to pass a separate `--root` option.
+
 Now that we have a new session, we can pass it to (most) other commands via the
 `--session`/`-s` option:
 
 ```bash
 $ kbsecret new -s ultra-secret
-$ kbsecret list --session ultra-secret
+$ kbsecret list --session api-keys
 ```
 
 Note that `--session`/`-s` is a subcommand option, not applied to `kbsecret` itself. In other words,
