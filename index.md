@@ -27,7 +27,7 @@ text or blobs of data).
 
 * Records are files, sessions are directories
 
-    KBSecret has no opaque databases or caches &mdash; records are JSON-encoded files, and
+    KBSecret has no opaque databases or caches &mdash; records are JSON-structured files, and
     sessions are directories containing those files.
 
     KBSecret's sessions and records can be manipulated with standard Unix tools (although
