@@ -101,12 +101,12 @@ For example, this will create a session between two Keybase users ("alice" and
 "bob") named "ultra-secret":
 
 ```bash
-$ kbsecret new-session --label ultra-secret --root ultra-secret --users alice,bob
+$ kbsecret session new ultra-secret --root ultra-secret --users alice,bob
 $ # more briefly
-$ kbsecret new-session -l ultra-secret -r ultra-secret -u alice,bob
+$ kbsecret session new ultra-secret -r ultra-secret -u alice,bob
 ```
 
-Note that the arguments to `--label`/`-l` and `--root`/`-r` don't need to be the same &mdash;
+Note that the session label and `--root`/`-r` option don't need to be the same &mdash;
 the label is what identifies the session to other `kbsecret` commands, while the root
 is just the directory that the session's storage directory. In this case, it gets expanded
 to `/keybase/private/alice,bob/kbsecret/ultra-secret/`.
@@ -115,10 +115,10 @@ We can also create a *team-based* session via the `--team` option, which takes t
 of a Keybase team that you already belong to:
 
 ```bash
-$ kbsecret new-session --team megacorp.devs --label api-keys
+$ kbsecret session new api-keys --team megacorp.devs
 ```
 
-Team-based sessions infer the session storage directory from `--label`, so we don't need
+Team-based sessions infer the session storage directory from label, so we don't need
 to pass a separate `--root` option.
 
 Now that we have a new session, we can pass it to (most) other commands via the
