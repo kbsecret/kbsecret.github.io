@@ -82,6 +82,9 @@ Try this out with some of the other types above, and see what you get!
 
 ## Sessions
 
+**Note**: Versions 0.9.5 and onwards deprecate the `new-session` and `rm-session` commands in
+favor of `session new` and `session rm`.
+
 But wait, where did the record(s) created above go? We didn't specify a session in either
 `kbsecret new` or `kbsecret list`!
 
@@ -95,7 +98,7 @@ $ kbsecret list
 $ kbsecret list -s default
 ```
 
-So, how do we create a new session? With `kbsecret new-session`!
+So, how do we create a new session? With `kbsecret session new`!
 
 For example, this will create a session between two Keybase users ("alice" and
 "bob") named "ultra-secret":
