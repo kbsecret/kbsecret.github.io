@@ -13,25 +13,30 @@ You can find installation instructions for your system [here](https://keybase.io
 
 ## Installation
 
-KBSecret is available as a Ruby gem, and can be installed via `gem`:
+Currently, KBSecret can be installed either as a Ruby Gem or as a [Homebrew](https://brew.sh)
+package.
+
+Via `gem`:
 
 ```bash
 $ gem install kbsecret
+$ gem install --pre kbsecret # if you want a prerelease
 ```
 
-Or, if you'd like to try the latest prerelease:
+Via `brew`:
 
 ```bash
-$ gem install --pre kbsecret
+$ brew tap kbsecret/kbsecret
+$ brew install kbsecret
 ```
 
-## System packages?
+## What about `<package-manager>`?
 
 KBSecret has *very* experimental packages available for Debian (deb), Fedora (rpm),
 and Arch (PKGBUILD). See the [README](https://github.com/kbsecret/kbsecret/blob/master/README.md)
 for more information.
 
-Please help us by contributing (real) native packages for your system/distribution!
+Please help us by contributing better native packages for your system/distribution!
 
 # Testing your installation
 
@@ -41,7 +46,7 @@ Once you've installed KBSecret, you can test it by running:
 $ kbsecret version
 ```
 
-If you see something like `kbsecret version 0.8.2.`, you're good to go!
+If you see something like `kbsecret version 0.9.7.`, you're good to go!
 
 Everything working? Check out the [quick start](quickstart) guide.
 
