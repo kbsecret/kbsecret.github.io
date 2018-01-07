@@ -42,6 +42,9 @@ commands.
 
 ## Command configuration
 
+**IMPORTANT**: Versions 1.0.0.pre.2 and onwards use `/keybase/private/<user>/kbsecret/.config`
+as the configuration directory, rather than `~/.config/kbsecret`.
+
 The `~/.config/kbsecret/commands.ini` can be used to configure individual `kbsecret` subcommands.
 
 For example, this is how you would tell `kbsecret` to always pass `--no-notify` to
