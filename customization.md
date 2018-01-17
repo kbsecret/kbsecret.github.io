@@ -45,7 +45,7 @@ commands.
 **IMPORTANT**: Versions 1.0.0.pre.2 and onwards use `/keybase/private/<user>/kbsecret/.config`
 as the configuration directory, rather than `~/.config/kbsecret`.
 
-The `~/.config/kbsecret/commands.ini` can be used to configure individual `kbsecret` subcommands.
+The `/keybase/private/<user>/kbsecret/.config/commands.ini` can be used to configure individual `kbsecret` subcommands.
 
 For example, this is how you would tell `kbsecret` to always pass `--no-notify` to
 `kbsecret new-session`:
@@ -65,7 +65,7 @@ KBSecret doesn't restrict you to the record types provided by the installation &
 write your own!
 
 Record types in KBSecret are just class definitions (with a little DSL magic), and custom
-ones get loaded from `~/.config/kbsecret/record/`.
+ones get loaded from `/keybase/private/<user>/kbsecret/.config/record/`.
 
 Here's an example of a simple, single-field record (`simple.rb`). It's just 3 lines!
 
