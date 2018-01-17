@@ -1,3 +1,4 @@
+* [1.0.0](1.0.0/kbsecret.1)
 * [1.0.0.pre.2](1.0.0.pre.2/kbsecret.1)
 * [1.0.0.pre.1](1.0.0.pre.1/kbsecret.1)
 * [0.9.9](0.9.9/kbsecret.1)
