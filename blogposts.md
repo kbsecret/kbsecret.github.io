@@ -14,4 +14,4 @@ This page is a collection of blog posts discussing KBSecret and its development.
 * [KBSecret 0.5.x: Packages, Typed Arguments, and More](http://blog.yossarian.net/2017/06/23/KBSecret-0-5-x-Packages-Typed-Arguments-and-More)
 * [KBSecret is Maturing](http://blog.yossarian.net/2017/06/07/kbsecret-is-Maturing)
 * [Task Management with kbsecret](http://blog.yossarian.net/2017/04/16/Task-Management-With-kbsecret)
-* [ Augmenting my Workflow with kbsecret](http://blog.yossarian.net/2017/04/08/Augmenting-my-Workflow-With-kbsecret)
+* [Augmenting my Workflow with kbsecret](http://blog.yossarian.net/2017/04/08/Augmenting-my-Workflow-With-kbsecret)
