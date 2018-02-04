@@ -32,11 +32,9 @@ $ brew install kbsecret
 
 ## What about `<package-manager>`?
 
-KBSecret has *very* experimental packages available for Debian (deb), Fedora (rpm),
-and Arch (PKGBUILD). See the [README](https://github.com/kbsecret/kbsecret/blob/master/README.md)
-for more information.
+Currently, KBSecret has no official system packages besides Homebrew.
 
-Please help us by contributing better native packages for your system/distribution!
+Please help us by contributing native packages for your system/distribution!
 
 # Testing your installation
 
