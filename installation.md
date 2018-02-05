@@ -13,28 +13,32 @@ You can find installation instructions for your system [here](https://keybase.io
 
 ## Installation
 
-Currently, KBSecret can be installed either as a Ruby Gem or as a [Homebrew](https://brew.sh)
-package.
-
-Via `gem`:
+### System independent (`gem`)
 
 ```bash
 $ gem install kbsecret
-$ gem install --pre kbsecret # if you want a prerelease
+$ # OR, if you'd like a prerelease
+$ gem install --pre kbsecret
 ```
 
-Via `brew`:
+### macOS (`brew`):
 
 ```bash
 $ brew tap kbsecret/kbsecret
 $ brew install kbsecret
 ```
 
-## What about `<package-manager>`?
+### Arch Linux (`pacman`)
 
-Currently, KBSecret has no official system packages besides Homebrew.
+1. Add [quarry](https://github.com/anatol/quarry) to your `/etc/pacman.conf`
+2. `pacman -S ruby-kbsecret`
 
-Please help us by contributing native packages for your system/distribution!
+### What about `<system>`/`<package-manager>`?
+
+If you don't see your system or package manager listed above, KBSecret doesn't have an
+official package available for it.
+
+Please help us by contributing one!
 
 # Testing your installation
 
