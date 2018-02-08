@@ -8,7 +8,20 @@ Once you have KBSecret [installed](installation), getting started is straightfor
 
 ## Terminology
 
-To get started, you'll need to know three terms as KBSecret uses them: **types**, **records**,
+### The basics
+
+KBSecret is a program that stores secrets. Your e-mail login and a personal to-do list are examples
+of secrets.
+
+KBSecret is also a program that *shares* secrets. Secrets can be shared with any other Keybase
+user, and groups of users can add and modify secrets together.
+
+KBSecret aims to do both of the above with a minimum of fuss and thought: secrets are encrypted
+transparently and shared instantly.
+
+### Technical specifics
+
+KBSecret's documentation uses three key terms: **types**, **records**,
 and **sessions**.
 
 A **type** in KBSecret is a collection of fields and operations on those fields. For example,
