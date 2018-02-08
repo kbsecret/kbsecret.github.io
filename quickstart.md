@@ -132,7 +132,7 @@ $ kbsecret session new ultra-secret -r ultra-secret -u alice,bob
 
 Note that the session label and `--root`/`-r` option don't need to be the same &mdash;
 the label is what identifies the session to other `kbsecret` commands, while the root
-is just the directory that the session's storage directory. In this case, it gets expanded
+is the directory that the session's storage directory. In this case, it gets expanded
 to `/keybase/private/alice,bob/kbsecret/ultra-secret/`.
 
 We can also create a *team-based* session via the `--team` option, which takes the name
