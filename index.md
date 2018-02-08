@@ -3,7 +3,8 @@
 KBSecret is a command line utility and library for managing *secrets*.
 
 Secrets can be structured (like login pairs and environment keys), or unstructured (like raw
-text or blobs of data).
+text or blobs of data). They can also be shared between multiple individuals or entire teams via
+the Keybase platform.
 
 # Benefits over other password managers
 
