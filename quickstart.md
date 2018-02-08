@@ -19,8 +19,8 @@ A **record** in KBSecret is an instantiation of a **type**, meaning that its fie
 real values. For example, if `gmail` were a record of type `login`, its `username` might be
 bound to `alice` and its `password` might be bound to `hunter2`.
 
-A **session** in KBSecret is a collection of **records**. The session can be heterogeneous,
-meaning that multiple types of records can be present in it. Every session is *either* associated
+A **session** in KBSecret is a collection of **records**. Multiple types of records can be present
+in the session. Every session is *either* associated
 with one or more Keybase users (including you), *or* with a
 [Keybase team](https://keybase.io/blog/introducing-keybase-teams).
 
