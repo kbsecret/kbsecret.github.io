@@ -52,10 +52,10 @@ and you should check out the [customization](customization) page for more info o
 
 ## Records
 
-So, KBSecret knows about `login` records. Let's try to create to create one!
+So, KBSecret knows about `login` records. Let's create one:
 
 ```bash
-$ kbsecret new login my-login
+$ kbsecret new login facebook
 ```
 
 This will prompt you to input the fields expected by the `login` type, namely a
@@ -75,10 +75,34 @@ $ kbsecret list
 Outputs:
 
 ```
-my-login
+facebook
 ```
 
-Try this out with some of the other types above, and see what you get!
+And to access the record itself, we can use either `kbsecret login` or `kbsecret pass`:
+
+```bash
+$ kbsecret login facebook
+$ kbsecret pass facebook
+```
+
+Outputs:
+
+```
+Label: facebook
+    Username: Alice
+    Password: hunter2
+```
+
+and
+
+```
+hunter2
+```
+
+respectively.
+
+Try this out with some of the other types above, and see what you get! As a rule of thumb, the
+pattern is `kbsecret new <type>` for record creation, and `kbsecret <type>` for typed record access.
 
 ## Sessions
 
